@@ -1,0 +1,24 @@
+{
+  "name": "comp4537-assignment1-bronze",
+  "version": "1.0.0",
+  "description": "\"# COMP4537-Asn1-Bronze\"",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erkim97/COMP4537-Asn1-Bronze.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/erkim97/COMP4537-Asn1-Bronze/issues"
+  },
+  "homepage": "https://github.com/erkim97/COMP4537-Asn1-Bronze#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql": "^2.18.1",
+    "path": "^0.12.7"
+  }
+}
