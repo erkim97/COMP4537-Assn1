@@ -21,11 +21,8 @@ function loadCount(){
 function loadQuestions(){
     for(i = 0; i < quoteCounter;i++){
         let div = document.getElementById('newQuote');
-        document.getElementById('newQuote').style.marginLeft = "15px";
-
         let quoteDiv = document.createElement('div');
         quoteDiv.setAttribute('id', "div"+i)
-
         div.appendChild(quoteDiv);
 
         let h4 = document.createElement('h4');
