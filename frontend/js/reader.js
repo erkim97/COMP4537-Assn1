@@ -31,7 +31,7 @@ function loadQuestions(){
 
         let authorInput = document.createElement('p');
         authorInput.setAttribute('id', "author"+ i);
-        authorInput.textContent = quoteData[i].quote;
+        authorInput.textContent = quoteData[i].author;
         quoteDiv.appendChild(authorInput);
 
         let quoteText = document.createElement('h4');
@@ -40,7 +40,7 @@ function loadQuestions(){
 
         let quoteTextArea = document.createElement('p')
         quoteTextArea.setAttribute('id', "quote" + i);
-        quoteTextArea.textContent = quoteData[i].author;
+        quoteTextArea.textContent = quoteData[i].quote;
         quoteDiv.appendChild(quoteTextArea);
         quoteDiv.appendChild(document.createElement("br")); 
         quoteDiv.appendChild(document.createElement("br")); 
