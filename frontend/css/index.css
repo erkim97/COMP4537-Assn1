@@ -1,0 +1,33 @@
+#dbTitle{
+    text-align: center;
+    font-size: 70px;
+    margin-bottom: 150px;
+}
+
+#createQuiz{
+    color:white;
+    padding-left: 47px;
+    padding-right: 47px;
+}
+
+#takeQuiz{
+    color:white;
+    padding-left: 55px;
+    padding-right: 55px;
+}
+
+.buttonMargin{
+    margin:33px;
+    text-align: center;
+}
+
+.centerContainer{
+    height: 80%;
+    width: 80%;
+    position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
