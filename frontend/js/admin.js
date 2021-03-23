@@ -93,6 +93,7 @@ function addQuote(dbid){
     let div = document.getElementById('newQuote');
     let quoteDiv = document.createElement('div');
     quoteDiv.setAttribute('id' , 'div'+quoteCounter)
+    quoteDiv.setAttribute('margin-left', '15px;')
     div.appendChild(quoteDiv);
 
     let h4 = document.createElement('h4');
@@ -117,8 +118,8 @@ function addQuote(dbid){
     quoteTextArea.setAttribute('cols', '50');
     quoteTextArea.setAttribute('id', "quote" + quoteCounter);
     quoteDiv.appendChild(quoteTextArea);
-    quoteDiv.appendChild(break3); 
-    quoteDiv.appendChild(break4); 
+    quoteDiv.appendChild(document.createElement("br")); 
+    quoteDiv.appendChild(document.createElement("br")); 
 
     let updateButton = document.createElement('button');
     updateButton.textContent = "Update To Database"
