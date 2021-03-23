@@ -123,6 +123,7 @@ function addQuote(dbid){
     quoteDiv.appendChild(document.createElement("br")); 
 
     let updateButton = document.createElement('button');
+    document.getElementById('newQuote').style.marginRight = "15px";
     updateButton.textContent = "Update To Database"
     updateButton.setAttribute('id', 'update-btn'+quoteCounter)
     updateButton.setAttribute('onclick','updateQuote('+null+','+ quoteCounter +',)')
@@ -169,6 +170,7 @@ function updateQuote(id,num){
             }
         };
         xhr.send("quote="+quote+"&author="+author);
+        alert("Added Quote to Database Successfully")
     }else{
         let author = document.getElementById('author' + num).value
         let quote = document.getElementById('quote' +num).value
@@ -180,5 +182,7 @@ function updateQuote(id,num){
             }
         };
         xhr.send("id="+id+"&quote="+quote+"&author="+author);
+        alert("Updated Quote Successfully")
+
     }
 }
