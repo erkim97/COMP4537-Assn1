@@ -82,31 +82,25 @@ function getRecentQuote(){
                 let div = document.getElementById('recentQuoteBtn')
                 div.after(document.createElement("br")); 
                 div.after(document.createElement("br"));
-                
-                let h4 = document.createElement('h4');
-                h4.textContent = "Recent Author:";
-                div.after(h4);
-                clicked = true;
+
+                let quoteTextArea = document.createElement('p')
+                quoteTextArea.setAttribute('id', "quote" + i);
+                quoteTextArea.textContent = data[0].quote;
+                div.after(quoteTextArea);
+
+                let quoteText = document.createElement('h4');
+                quoteText.textContent = "Recent Quote:";
+                div.after(quoteText)
 
                 let authorInput = document.createElement('p');
                 authorInput.setAttribute('id', "author"+ i);
                 authorInput.textContent = data[0].author;
                 div.after(authorInput);
-                
-                let quoteText = document.createElement('h4');
-                quoteText.textContent = "Recent Quote:";
-                div.after(quoteText)
 
-                let quoteTextArea = document.createElement('p')
-
-                quoteTextArea.setAttribute('id', "quote" + i);
-                quoteTextArea.textContent = data[0].quote;
-                div.after(quoteTextArea);
-
-              
-               
-
-                
+                let h4 = document.createElement('h4');
+                h4.textContent = "Recent Author:";
+                div.after(h4);
+                clicked = true;
             }    
         }
         
