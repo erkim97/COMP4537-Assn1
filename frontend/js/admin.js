@@ -23,7 +23,8 @@ function loadQuestions(){
     for(i = 0; i < quoteCounter;i++){
         let div = document.getElementById('newQuote');
         let quoteDiv = document.createElement('div');
-        quoteDiv.setAttribute('id', "div"+i)
+        quoteDiv.setAttribute('id', "div"+i);
+        document.getElementById('div'+quoteCounter).style.marginLeft = "15px";
         div.appendChild(quoteDiv);
 
         let h4 = document.createElement('h4');
@@ -92,8 +93,8 @@ function getQuotesDB(){
 function addQuote(dbid){
     let div = document.getElementById('newQuote');
     let quoteDiv = document.createElement('div');
-    quoteDiv.setAttribute('id' , 'div'+quoteCounter)
-    quoteDiv.setAttribute('margin-left', '15px;')
+    quoteDiv.setAttribute('id' , 'div'+quoteCounter);
+    document.getElementById('div'+quoteCounter).style.marginLeft = "15px";
     div.appendChild(quoteDiv);
 
     let h4 = document.createElement('h4');

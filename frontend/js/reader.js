@@ -23,6 +23,8 @@ function loadQuestions(){
         let div = document.getElementById('newQuote');
         let quoteDiv = document.createElement('div');
         quoteDiv.setAttribute('id', "div"+i)
+        document.getElementById('div'+i).style.marginLeft = "15px";
+
         div.appendChild(quoteDiv);
 
         let h4 = document.createElement('h4');
